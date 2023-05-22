@@ -1,5 +1,4 @@
 #include <Keypad.h>
-#include <EEPROM.h>
 #include <Servo.h>
 #include <LiquidCrystal.h>
 
@@ -58,13 +57,13 @@ void setup() {
 }
 
 void servo(){
-  for (pos = 0; pos<= 180; pos +=1) {
+  for (pos = 0; pos<= 90; pos +=1) {
     lock.write(pos);
-    delay(50);
+    delay(20);
   }
-  for (pos = 180; pos >= 0; pos -= 1) {
+  for (pos = 90; pos >= 0; pos -= 1) {
     lock.write(pos);
-    delay(50);
+    delay(20);
   }
 }
 
