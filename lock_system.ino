@@ -27,7 +27,6 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 void setup() {
   lock.attach(A2);
   lcd.begin(16,2);
-  Serial.begin(9600);
   lcd.clear();
   lcd.setCursor(0,0);
   lcd.print("Crie uma senha");
